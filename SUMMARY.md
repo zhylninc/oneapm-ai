@@ -24,5 +24,6 @@
    * [如何使用OneAPM的 extensions 拓展功能](ru_he_shi_yong_oneapm_de_extensions_tuo_zhan_gong_.md)
    * [Java Agent安装后没有数据显示](java_agentan_zhuang_hou_mei_you_shu_ju_xian_shi.md)
    * [数据显示问题](shu_ju_xian_shi_wen_ti.md)
+       * Java 部署 OneAPM后无数据显示
 * 功能详述
 
