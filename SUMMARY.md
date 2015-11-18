@@ -23,6 +23,6 @@
    * [如何对指定 jar 包进行监控](ru_he_dui_zhi_ding_jar_bao_jin_xing_jian_kong.md)
    * [如何使用OneAPM的 extensions 拓展功能](ru_he_shi_yong_oneapm_de_extensions_tuo_zhan_gong_.md)
    * [数据显示问题](shu_ju_xian_shi_wen_ti.md)
-       * Java 部署 OneAPM后无数据显示
+       * [Java 部署 OneAPM后无数据显示](java_bu_shu_oneapm_hou_wu_shu_ju_xian_shi.md)
 * 功能详述
 
