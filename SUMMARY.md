@@ -4,7 +4,7 @@
 * [版本日志](版本日志.md)
 * 开始使用
 * [Agent 安装](Agent 安装.md)
-   * Java
+   * [Java](java-agent-install.md)
    * [PHP](php-agent-install.md)
 * 兼容环境支持
 * 配置选项
