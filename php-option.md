@@ -39,8 +39,8 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |oneapm.http_capture_params|true|重启应用服务器|String|设置是否捕捉 get 和 post 参数。可选值(false)。|
 |oneapm.is_pathinfo|false|重启应用服务器|String|是否启用 pathinfo 模式，如果开启，PHP 探针抓取的事务展示模式是：http：//www.xxx.com/index.PHP/key1/key2/key3，如果不开启，PHP 探针抓取的事务展示模式是：http：//www.xxx.com/index.php|
 |oneapm.num_pathinfo|0|重启应用服务器|Number|抓取的 pathinfo 展示个数，只有在 oneapm.is_pathinfo 设置为 true 时有效，设置 oneapm.num_pathinfo=0，抓取的 http：//www.xxx.com/index.PHP/key1/key2/key3 后面参数个数不限，例如设置为1，抓取的 web 事务展示为：http：//www.xxx.com/index.PHP/key1|
-|oneapm.browser_monitoring|false|重启应用服务器|String|是否开启自动注入 Bi Agent 脚本。false，设置为 true 开启。|
-|oneapm.browser_monitoring.is_js_text|false|重启应用服务器|String|切换 Bi Agent 脚本注入方式，url 注入加载链接；text 注入脚本内容。 false；可选值 url，text。
+|oneapm.browser_monitoring|false|重启应用服务器|String|是否开启自动注入 Bi Agent 脚本。默认值 false，设置为 true 开启。|
+|oneapm.browser_monitoring.is_js_text|false|重启应用服务器|String|切换 Bi Agent 脚本注入方式，url 注入加载链接；text 注入脚本内容。默认值 false；可选值 url，text。
 
 >备注：以下参数的优先级顺序为（按从高到低排列）
 + btm
