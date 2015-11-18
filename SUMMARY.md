@@ -9,7 +9,7 @@
    * [PHP](php-agent-install.md)
 * 兼容环境支持
    * Java
-   * [PHP](php-compatible.md)
+   * [PHP](php-compatible)
 * 配置选项
 * 常见问题
 * 功能详述
