@@ -27,7 +27,8 @@
  <Application Server Path>/
  ```
 * Linux 或 Mac
-![alt text](images/tomcat.jpg) 
+  ![](tomcat.jpg)
+ 
 
 * 写入「License Key」至配置文件「OneAPM/oneapm.properties」
 * 在「OneAPM 目录」中运行安装指令
