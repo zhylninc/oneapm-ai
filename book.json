@@ -1,6 +1,6 @@
 {
     "plugins": [
-        "duoshuo"
+        "-duoshuo"
     ],
     "pluginsConfig": {}
 }
