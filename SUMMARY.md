@@ -16,9 +16,8 @@
 * [兼容环境支持](jian_rong_huan_jing_zhi_chi.md)
    * [Java](java.md)
    * [PHP](php-compatible.md)
-* 配置选项
+* [配置选项](Java)
    * [PHP](php-option.md)
-   * [JAVA](java.md)
 * [常见问题](chang_jian_wen_ti.md)
    * [内网服务器如何部署OneAPM](nei_wang_fu_wu_qi_ru_he_bu_shu_oneapm.md)
    * [如何对指定 jar 包进行监控](ru_he_dui_zhi_ding_jar_bao_jin_xing_jian_kong.md)
