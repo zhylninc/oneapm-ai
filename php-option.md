@@ -1,9 +1,10 @@
 # PHP
 
 OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信息。您可以在本文中了解各个参数的意义，以及对应的配置方式。
+
 你可以在这些位置找到该配置文件：
-oneapm.cfg 的位置：/etc/oneapm/oneapm.cfg
-php.ini 的位置: 自定义路径
++ oneapm.cfg 的位置：/etc/oneapm/oneapm.cfg
++ php.ini 的位置: 自定义路径
 
 
 ##oneapm.cfg
