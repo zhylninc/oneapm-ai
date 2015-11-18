@@ -15,7 +15,7 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |loglevel|off|重启 daemon|String|deamon 程序的日志输出级别，可选值 (error、warning、info、debug、verbosedebug)。|
 |collector_host|tpm.oneapm.com|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信地址。|
 |port|80|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信端口。|
-|ssl_connect|0|重启 daemon|number|是否开启 ssl 协议传输。默认值0，设置为1开启。|
+|ssl_connect|0|重启 daemon|Number|是否开启 ssl 协议传输。默认值0，设置为1开启。|
 |proxy|null|重启 daemon|String|代理参数，有效格式为：user:password@host[:port]或者 host[:port]|
 
 >修改 oneapm.cfg 文件后，需要重启 oneapm-daemon 进程后才能生效。
@@ -27,9 +27,9 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |:-------------:|:-------------:|:-----:|---|---|
 |oneapm.appname|PHP Application|1、停止daemon。2、重启应用服务器。|String|可以根据自身需要对应用程序进行命名。|
 |oneapm.key|无|重启应用服务器|String|请输入 OneAPM PHP Agent 安装步骤中第一步生成的授权编号。License 默认为空，填写正确的License才能正常上传数据。|
-|oneapm.record_sql|模糊字段，不显示数据信息|重启应用服务器|String|该参数控制抓取的 sql 字段信息。可将其设置为 raw，抓取完整的 sql 信息；也可以设置为 off，不抓取 sql 信息；设置为 obfuscated 抓取的是混淆模式的 sql，sql 中重要的数据信息不显示。|
-|oneapm.transaction_threshold|0.5s|重启应用服务器|Duration|判断是否记录分析慢事务的阀值。超过这个值 Agent 开始记录分析慢事务的详细信息（trace）。单位：秒。|
-|oneapm.explain_threshold |0.5s|重启应用服务器|Duration|判断是否记录分析慢 SQL 的阀值。超过这个值 Agent 开始记录分析慢 SQL 的详细信息。单位：秒。|
+|oneapm.record_sql|obfuscated|重启应用服务器|String|该参数控制抓取的 sql 字段信息。可将其设置为 raw，抓取完整的 sql 信息；也可以设置为 off，不抓取 sql 信息；设置为 obfuscated 抓取的是混淆模式的 sql，sql 中重要的数据信息不显示。|
+|oneapm.transaction_threshold|0.5|重启应用服务器|Number|判断是否记录分析慢事务的阀值。超过这个值 Agent 开始记录分析慢事务的详细信息（trace）。单位：秒。|
+|oneapm.explain_threshold |0.5|重启应用服务器|Number|判断是否记录分析慢 SQL 的阀值。超过这个值 Agent 开始记录分析慢 SQL 的详细信息。单位：秒。|
 |oneapm.errorlevel|ERROR|重启应用服务器|String|配置错误信息中记录的 PHP 错误级别，可选项(NOTICE, WARNING, ERROR, CLOSE)。|
 |oneapm.loglevel|ERROR|重启应用服务器|String|探针的日志输出级别。可选值(ERROR, WARN, INFO, TRACE, DEBUG )。|
 |oneapm.auto_transaction_get|空|重启应用服务器|String|设置用 get 参数传递的事务名称，比如 URL 为 http://url/index.php?s=/home/index/index.html ，如果设置此配置项的值为"s"，则 Web 事务名就会变成 WebTransaction/Uri/home/index/index.html，而不是默认的 WebTransaction/Uri/home/index/index.html。|
