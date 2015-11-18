@@ -22,6 +22,6 @@
    * [内网服务器如何部署OneAPM](nei_wang_fu_wu_qi_ru_he_bu_shu_oneapm.md)
    * [如何对指定 jar 包进行监控](ru_he_dui_zhi_ding_jar_bao_jin_xing_jian_kong.md)
    * [如何使用OneAPM的 extensions 拓展功能](ru_he_shi_yong_oneapm_de_extensions_tuo_zhan_gong_.md)
-   * 数据显示问题
+   * [数据显示问题](shu_ju_xian_shi_wen_ti.md)
 * 功能详述
 
