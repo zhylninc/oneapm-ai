@@ -11,6 +11,7 @@
    * Java
    * [PHP](php-compatible.md)
 * 配置选项
+   * PHP
 * 常见问题
 * 功能详述
 
