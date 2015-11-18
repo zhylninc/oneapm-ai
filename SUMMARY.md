@@ -6,7 +6,7 @@
 * [开始使用](kai-shi-shi-yongmd.md)
 * [Agent 安装](Agent 安装.md)
    * [Java](java-agent-install.md)
-   * [PHP](php-agent-install.md)
+   * [PHP](php-agent-install)
 * 兼容环境支持
    * Java
    * [PHP](php-compatible)
