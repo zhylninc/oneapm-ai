@@ -6,7 +6,7 @@
 * [开始使用](kai-shi-shi-yongmd.md)
 * [Agent 安装](Agent 安装.md)
    * [Java](java-agent-installmd.md)
-       * Tomcat 中部署方法
+       * [Tomcat 中部署方法](tomcat_zhong_bu_shu_fang_fa.md)
    * [PHP](php-agent-install.md)
 * 兼容环境支持
    * Java
