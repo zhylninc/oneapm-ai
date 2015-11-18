@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
 * [版本日志](版本日志.md)
-   * [PHP版本日志](php-release-notemd.md)
+   * [PHP](php-release-notemd.md)
 * 开始使用
 * [Agent 安装](Agent 安装.md)
    * [Java](java-agent-install.md)
