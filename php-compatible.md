@@ -13,7 +13,7 @@
 + PHP 5.6 及以上
 
 ##数据库	
-mysql [mysql , pdo , mysqli]
++ mysql [mysql , pdo , mysqli]
 
 ##webServer	
 + Apache 2.2 或 2.4 mod_php 模式
@@ -21,10 +21,15 @@ mysql [mysql , pdo , mysqli]
 + 任何用 通过 FastCGI 连接 php-fpm (如 Nginx)
 
 ##明确不支持的框架	
-Yaf
++ Yaf(已扩展方式安装)
 
 ##可以安装的框架	
-所有基于PHP语言写的框架都可以安装 PHP-Agent
++ 所有基于PHP语言写的框架都可以安装 PHP-Agent
+
+##已匹配URI的框架
++ ThinkPHP
++ Yii
++ CodeIgniter
 
 ##兼容的扩展	
 + bz2
