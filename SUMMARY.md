@@ -5,7 +5,7 @@
 * 开始使用
 * [Agent 安装](Agent 安装.md)
    * Java
-   * PHP
+   * [PHP](php-agent-install.md)
 * 兼容环境支持
 * 配置选项
 * 常见问题
