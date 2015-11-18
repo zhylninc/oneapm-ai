@@ -8,121 +8,41 @@ php.ini 的位置: 自定义路径
 
 ##oneapm.cfg
 
+|配置名称|默认值|生效方式|参数类型|参数说明|
+|:-------------:|:-------------:|:-----:|---|---|
+|logfile|var/log/oneapm/oneapm-daemon.log|重启 daemon|String|log 文件所在路径|
+|loglevel|off|重启 daemon|String|deamon 程序的日志输出级别，可选值 (error、warning、info、debug、verbosedebug)。|
+|collector_host|tpm.oneapm.com|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信地址。|
+|port|80|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信端口。|
+|ssl_connect|0|重启 daemon|number|是否开启 ssl 协议传输。默认值0，设置为1开启。|
+|proxy|null|重启 daemon|String|代理参数，有效格式为：user:password@host[:port]或者 host[:port]|
 
-
-
-
-
-
-||*配置名称*||*默认值*||*生效方式*||*参数类型*||*参数说明*||
-
-
-||logfile||var/log/oneapm/oneapm-daemon.log||重启 daemon||String||log 文件所在路径||
-
-loglevel
-默认值
-off
-生效方式
-重启 daemon
-参数类型
-String
-参数说明
-deamon 程序的日志输出级别，可选值 (error、warning、info、debug、verbosedebug)。
-collector_host
-默认值
-tpm.oneapm.com
-生效方式
-重启 daemon
-参数类型
-String
-参数说明
-指定 OneAPM daemon 与 OneAPM server 的通信地址。
-port
-默认值
-80
-生效方式
-重启 daemon
-参数类型
-String
-参数说明
-指定 OneAPM daemon 与 OneAPM server 的通信端口。
-ssl_connect
-默认值
-0
-生效方式
-重启 daemon
-参数类型
-number
-参数说明
-是否开启 ssl 协议传输。默认值0，设置为1开启。
-proxy
-默认值
-null
-生效方式
-重启 daemon
-参数类型
-String
-参数说明
-代理参数，有效格式为：user:password@host[:port]或者 host[:port]
-修改 oneapm.cfg 文件后，需要重启 oneapm-daemon 进程后才能生效。
+>修改 oneapm.cfg 文件后，需要重启 oneapm-daemon 进程后才能生效。
 重启命令：service oneapm-daemon-service restart
 
+
 ##php.ini 配置文件
-oneapm.appname
-默认值
-PHP Application
-生效方式
-1、停止daemon。2、重启应用服务器。
-参数类型
-String
-参数说明
-可以根据自身需要对应用程序进行命名。
-oneapm.key
-默认值
-无
-生效方式
-重启应用服务器
-参数类型
-String
-参数说明
-请输入 OneAPM PHP Agent 安装步骤中第一步生成的授权编号。License 默认为空，填写正确的License才能正常上传数据。
-oneapm.record_sql
-默认值
-模糊字段，不显示数据信息
-生效方式
-重启应用服务器
-参数类型
-String
-参数说明
-该参数控制抓取的 sql 字段信息。可将其设置为 raw，抓取完整的 sql 信息；也可以设置为 off，不抓取 sql 信息；设置为 obfuscated 抓取的是混淆模式的 sql，sql 中重要的数据信息不显示。
-oneapm.transaction_threshold 
-默认值
-0.5s
-生效方式
-重启应用服务器
-参数类型
-Duration
-参数说明
-判断是否记录分析慢事务的阀值。超过这个值 Agent 开始记录分析慢事务的详细信息（trace）。单位：秒。
-oneapm.explain_threshold 
-默认值
-0.5s
-生效方式
-重启应用服务器
-参数类型
-Duration
-参数说明
-判断是否记录分析慢 SQL 的阀值。超过这个值 Agent 开始记录分析慢 SQL 的详细信息。单位：秒。
-oneapm.errorlevel
-默认值
-ERROR
-生效方式
-重启应用服务器
-参数类型
-String
-参数说明
-配置错误信息中记录的 PHP 错误级别，可选项(NOTICE, WARNING, ERROR, CLOSE)。
-oneapm.loglevel
+|配置名称|默认值|生效方式|参数类型|参数说明|
+|:-------------:|:-------------:|:-----:|---|---|
+|oneapm.appname|PHP Application|1、停止daemon。2、重启应用服务器。|String|可以根据自身需要对应用程序进行命名。|
+|oneapm.key|无|重启应用服务器|String|请输入 OneAPM PHP Agent 安装步骤中第一步生成的授权编号。License 默认为空，填写正确的License才能正常上传数据。|
+|oneapm.record_sql|模糊字段，不显示数据信息|重启应用服务器|String|该参数控制抓取的 sql 字段信息。可将其设置为 raw，抓取完整的 sql 信息；也可以设置为 off，不抓取 sql 信息；设置为 obfuscated 抓取的是混淆模式的 sql，sql 中重要的数据信息不显示。|
+|oneapm.transaction_threshold|
+0.5s|
+重启应用服务器|
+Duration|
+判断是否记录分析慢事务的阀值。超过这个值 Agent 开始记录分析慢事务的详细信息（trace）。单位：秒。|
+|oneapm.explain_threshold |
+0.5s|
+重启应用服务器|
+Duration|
+判断是否记录分析慢 SQL 的阀值。超过这个值 Agent 开始记录分析慢 SQL 的详细信息。单位：秒。|
+|oneapm.errorlevel|
+ERROR|
+重启应用服务器|
+String|
+配置错误信息中记录的 PHP 错误级别，可选项(NOTICE, WARNING, ERROR, CLOSE)。|
+|oneapm.loglevel|
 默认值
 ERROR
 生效方式
