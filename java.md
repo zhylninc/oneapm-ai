@@ -135,7 +135,4 @@
 * Tuxedo
 
 
- + Ubuntu 11 以上
- + RedHat  Enterprise Linux (RHEL) 5 or later
-
- ##PHP版本
+ 
