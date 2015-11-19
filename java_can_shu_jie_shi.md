@@ -1,4 +1,4 @@
-# Java 参数解释
+# Java 参数配置说明
 
 * OneAPM Java Agent 从 oneapm.properites  配置文件中获取配置信息。您可以在本文中了解各个参数的意义，以及对应的配置方式。
 
