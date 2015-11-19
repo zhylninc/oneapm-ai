@@ -5,6 +5,7 @@
    * [Java](java-release-notes.md)
    * [PHP](php-release-note.md)
 * [开始使用](kai-shi-shi-yongmd.md)
+   * 快速使用OneAPM指南
 * [Agent 安装](Agent 安装.md)
    * [JAVA](java-agent-installmd.md)
        * [Tomcat 中部署方法](tomcat_zhong_bu_shu_fang_fa.md)
