@@ -12,7 +12,7 @@
        * [Jboss中部署方法](jbosszhong_bu_shu_fang_fa.md)
        * [Weblogic中部署方法](weblogiczhong_bu_shu_fang_fa.md)
        * [Play中部署方法](playzhong_bu_shu_fang_fa.md)
-       * Glassfish中部署方法
+       * [Glassfish中部署方法](glassfishzhong_bu_shu_fang_fa.md)
    * [PHP](php-agent-install.md)
 * [兼容环境支持](jian_rong_huan_jing_zhi_chi.md)
    * [Java](java.md)
