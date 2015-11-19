@@ -27,5 +27,6 @@
    * [如何使用OneAPM的 extensions 拓展功能](ru_he_shi_yong_oneapm_de_extensions_tuo_zhan_gong_.md)
    * [数据显示问题](shu_ju_xian_shi_wen_ti.md)
        * [Java 部署 OneAPM后无数据显示](java_bu_shu_oneapm_hou_wu_shu_ju_xian_shi.md)
+   * Java Agent 更新方法
 * 功能详述
 
