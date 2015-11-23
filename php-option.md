@@ -10,7 +10,7 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 ##oneapm.cfg
 
 |配置名称|默认值|生效方式|参数类型|参数说明|
-|:-------------:|:-------------:|:-----:|---|---|
+|:-------------|:-------------|:-----|:---|:---|
 |logfile|var/log/oneapm/oneapm-daemon.log|重启 daemon|String|log 文件所在路径|
 |loglevel|off|重启 daemon|String|deamon 程序的日志输出级别，可选值 (error、warning、info、debug、verbosedebug)。|
 |collector_host|tpm.oneapm.com|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信地址。|
