@@ -24,7 +24,7 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 
 ##php.ini 配置文件
 |配置名称|默认值|生效方式|参数类型|参数说明|
-|:-------------:|:-------------:|:-----:|---|---|
+|:-------------|:-------------|:-----|:---|:---|
 |oneapm.appname|PHP Application|1、停止daemon。2、重启应用服务器。|String|可以根据自身需要对应用程序进行命名。|
 |oneapm.key|无|重启应用服务器|String|请输入 OneAPM PHP Agent 安装步骤中第一步生成的授权编号。License 默认为空，填写正确的License才能正常上传数据。|
 |oneapm.record_sql|obfuscated|重启应用服务器|String|该参数控制抓取的 sql 字段信息。可将其设置为 raw，抓取完整的 sql 信息；也可以设置为 off，不抓取 sql 信息；设置为 obfuscated 抓取的是混淆模式的 sql，sql 中重要的数据信息不显示。|
