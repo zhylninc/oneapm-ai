@@ -19,7 +19,7 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |proxy|null|重启 daemon|String|代理参数，有效格式为：user:password@host[:port]或者 host[:port]|
 
 >修改 oneapm.cfg 文件后，需要重启 oneapm-daemon 进程后才能生效。
-重启命令：service oneapm-daemon-service restart
+重启命令：/etc/init.d/oneapm-daemon-service restart
 
 
 ##php.ini 配置文件
