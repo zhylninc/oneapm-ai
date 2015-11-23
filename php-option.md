@@ -14,7 +14,7 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |logfile|var/log/oneapm/oneapm-daemon.log|重启 daemon|String|log 文件所在路径|
 |loglevel|off|重启 daemon|String|deamon 程序的日志输出级别，可选值 (error、warning、info、debug、verbosedebug)。|
 |collector_host|tpm.oneapm.com|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信地址。|
-|port|80|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信端口。|
+|port|http:80,ssl:443|重启 daemon|String|指定 OneAPM daemon 与 OneAPM server 的通信端口。|
 |ssl_connect|0|重启 daemon|Number|是否开启 ssl 协议传输。默认值0，设置为1开启。|
 |proxy|null|重启 daemon|String|代理参数，有效格式为：user:password@host[:port]或者 host[:port]|
 
@@ -35,8 +35,8 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |oneapm.auto_transaction_get|空|重启应用服务器|String|设置用 get 参数传递的事务名称，比如 URL 为 http://url/index.php?s=/home/index/index.html ，如果设置此配置项的值为"s"，则 Web 事务名就会变成 WebTransaction/Uri/home/index/index.html，而不是默认的 WebTransaction/Uri/home/index/index.html。|
 |oneapm.auto_transaction_post|空|重启应用服务器|String|设置用 post 参数传递事务名称，例如 URL 为 http：//url/index.PHP，post 表单参数 name=admin， password=zabbix，设置 oneapm.auto_transaction_post = name，事务名称就更改为：WebTransaction/Uri/admin，默认事务名称是：WebTransaction/Uri/index.php|
 |oneapm.auto_transaction_naming|true|	重启应用服务器|	String|	是否抓取单一入口框架。默认抓取。|
-|oneapm.usesitename|false|重启应用服务器|String|设置用 $_SERVER[‘HTTP_HOST’] 变量值来命名实例，而不是默认的 hostname 来命名。适用于多个子域名的情景。可选值(true)。|
-|oneapm.http_capture_params|true|重启应用服务器|String|设置是否捕捉 get 和 post 参数。可选值(false)。|
+|oneapm.usesitename|false|重启应用服务器|String|按照网站名区分应用。|
+|oneapm.http_capture_params|true|重启应用服务器|String|是否抓取Http参数。可选值(false)。|
 |oneapm.is_pathinfo|false|重启应用服务器|String|是否启用 pathinfo 模式，如果开启，PHP 探针抓取的事务展示模式是：http：//www.xxx.com/index.PHP/key1/key2/key3，如果不开启，PHP 探针抓取的事务展示模式是：http：//www.xxx.com/index.php|
 |oneapm.num_pathinfo|0|重启应用服务器|Number|抓取的 pathinfo 展示个数，只有在 oneapm.is_pathinfo 设置为 true 时有效，设置 oneapm.num_pathinfo=0，抓取的 http：//www.xxx.com/index.PHP/key1/key2/key3 后面参数个数不限，例如设置为1，抓取的 web 事务展示为：http：//www.xxx.com/index.PHP/key1|
 |oneapm.browser_monitoring|false|重启应用服务器|String|是否开启自动注入 Bi Agent 脚本。默认值 false，设置为 true 开启。|
