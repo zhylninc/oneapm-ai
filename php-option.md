@@ -41,13 +41,13 @@ OneAPM PHP Agent 从 oneapm.cfg 和 php.ini 两个配置文件中获取配置信
 |oneapm.num_pathinfo|0|重启应用服务器|Number|抓取的 pathinfo 展示个数，只有在 oneapm.is_pathinfo 设置为 true 时有效，设置 oneapm.num_pathinfo=0，抓取的 http：//www.xxx.com/index.PHP/key1/key2/key3 后面参数个数不限，例如设置为1，抓取的 web 事务展示为：http：//www.xxx.com/index.PHP/key1|
 |oneapm.browser_monitoring|false|重启应用服务器|String|是否开启自动注入 Bi Agent 脚本。默认值 false，设置为 true 开启。|
 |oneapm.browser_monitoring.is_js_text|false|重启应用服务器|String|切换 Bi Agent 脚本注入方式，url 注入加载链接；text 注入脚本内容。默认值 false；可选值 url，text。|
-|oneapm.browser_monitoring.request.ip| all|| 在开启插码功能下，对指定ip进行插码。对用户IP过滤（即浏览器端IP），默认值是all，表示对所有用户IP插码。如果只允许对特定IP请求进行插码，则配置用户IP即可，多个IP之间用英文逗号进行分割，例如：只对10.0.0.1和10.0.0.2用户进行插码，则配置为：browser_monitoring.request.ip = 10.0.0.1,10.0.0.2|
-|oneapm.browser_monitoring.request.url|all|| 在开启插码功能下，对指定url进行插码。对请求的url进行过滤，默认值是all，表示对所有url插码。如果对特定请求进行插码，配置其url即可，多个URL之前用英文逗号分隔。例如; 对 http://www.example.com/index.php请求进行插码，则配置为：browser_monitoring.request.url = http://www.example.com/index.php|
-|oneapm.browser_monitoring.request.param|all|| 在开启插码功能下，对指定请求参数进行插码。对请求的参数进行过滤，默认是all，表示对所有参数插码。参数配置格式是： 参数名:参数值 ，多个参数用英文逗号分隔开。对参数顺序没有要求，满足POST、GET请求，一般结合browser_monitoring.request.url进行使用。例如1：只对http://www.example.com/index.php?service=login&name=bob进行插码，则配置如下：browser_monitoring.request.url =  http://www.example.com/index.php|
-|browser_monitoring.request.param| service:login,name:bob||例如2：http://www.example.com/forum.php?mod=forumdisplay&fid=2&page=1|
-|browser_monitoring.request.param | page:1,mod:forumdisplay,fid:2 ||顺序不同，可以插码|
+|oneapm.browser_monitoring.request.ip| all|重启应用服务器|String| 在开启插码功能下，对指定ip进行插码。对用户IP过滤（即浏览器端IP），默认值是all，表示对所有用户IP插码。如果只允许对特定IP请求进行插码，则配置用户IP即可，多个IP之间用英文逗号进行分割，例如：只对10.0.0.1和10.0.0.2用户进行插码，则配置为：browser_monitoring.request.ip = 10.0.0.1,10.0.0.2|
+|oneapm.browser_monitoring.request.url|all|重启应用服务器|String| 在开启插码功能下，对指定url进行插码。对请求的url进行过滤，默认值是all，表示对所有url插码。如果对特定请求进行插码，配置其url即可，多个URL之前用英文逗号分隔。例如; 对 http://www.example.com/index.php请求进行插码，则配置为：browser_monitoring.request.url = http://www.example.com/index.php|
+|oneapm.browser_monitoring.request.param|all|重启应用服务器|String| 在开启插码功能下，对指定请求参数进行插码。对请求的参数进行过滤，默认是all，表示对所有参数插码。参数配置格式是： 参数名:参数值 ，多个参数用英文逗号分隔开。对参数顺序没有要求，满足POST、GET请求，一般结合browser_monitoring.request.url进行使用。例如1：只对http://www.example.com/index.php?service=login&name=bob进行插码，则配置如下：browser_monitoring.request.url =  http://www.example.com/index.php|
+|browser_monitoring.request.param| service:login,name:bob|重启应用服务器|String|例如2：http://www.example.com/forum.php?mod=forumdisplay&fid=2&page=1|
+|browser_monitoring.request.param | page:1,mod:forumdisplay,fid:2 |重启应用服务器|String|顺序不同，可以插码|
 |browser_monitoring.request.param | mod:forumdisplay,fid:2|| 配置参数少于实际参数，可以插码
-|browser_monitoring.request.param | mod:forumdisplay,fid:2,page:1,uid:6|| 配置参数多于实际参数，被过滤，不能插码|
+|browser_monitoring.request.param | mod:forumdisplay,fid:2,page:1,uid:6|重启应用服务器|String| 配置参数多于实际参数，被过滤，不能插码|
 
 
 
