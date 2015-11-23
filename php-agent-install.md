@@ -1,7 +1,7 @@
 # PHP
 1、获取授权编号
 
-    注册用户进来之后会自动分配一个license key。
+    注册用户进来之后会自动分配一个 license key。
     
 2、下载探针
     
@@ -12,7 +12,7 @@
     
 3、安装探针
 
-    解压Agent安装包
+    解压 Agent 安装包
     tar -xzf OneAPM_php_Agent_latest.tar.gz
     
     定位至「安装包所在路径」
