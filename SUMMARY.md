@@ -6,7 +6,7 @@
    * [PHP](php-release-note.md)
 * [开始使用](kai-shi-shi-yongmd.md)
    * [快速使用OneAPM指南](kuai_su_shi_yong_oneapm_zhi_nan.md)
-* [Agent 安装](Agent 安装.md)
+* [Agent 安装](agent_install.md)
    * [JAVA](java-agent-installmd.md)
        * [Tomcat 中部署方法](tomcat_zhong_bu_shu_fang_fa.md)
        * [Jetty 安装方法](jetty_an_zhuang_fang_fa.md)
