@@ -34,9 +34,8 @@
 | 默认值 | MyApplication |
 | -- | -- |
 | 生效方式 | 重启应用服务器 |
-| 参数类型 | String |
-| 参数说明 | app_name 只支持英文命名。
-指定初始化应用程序名称，当中间件部署多个应用时，OneAPM Agent 将所有应用程序数据统一记录到初始化应用程序中，设置 enable_auto_app_naming 为 true， OneAPM Agent 将数据自动分散到相关应用程序中。 |
+| 参数类型 | String  |
+| 参数说明 | app_name 只支持英文命名。指定初始化应用程序名称，当中间件部署多个应用时，<br>OneAPM Agent 将所有应用程序数据统一记录到初始化应用程序中，设置<br> enable_auto_app_naming 为 true， OneAPM Agent 将数据自动分散到相关应用程序中; |
 
 ## enable_auto_transaction_naming
 
