@@ -41,6 +41,18 @@ cmd="java -Xms512m -Xmx2048m -XX:PermSize=256m －javaagent:/full/path/to/oneapm
 **问题 4 ：可以看到/OneAPM/logs/目录，网络和时间都是正确的，还是没有数据，是什么原因啊？**
 
 * 回答：检查／OneAPM的权限，保证／OneAPM／目录及目录下的文件有执行的权限，再重启启动tomcat；
+例如：
+
+ ```
+➜  apache-tomcat-8.0.28  ls -l OneAPM
+total 11864
+drwxrwxrwx@ 42 qinheng  staff     1428 Aug 27 02:50 extensions
+drwxr-xr-x@ 25 qinheng  staff      850 Aug 27 10:51 lib
+drwxr-xr-x   3 qinheng  staff      102 Nov 26 23:13 logs
+-rw-r--r--@  1 qinheng  staff  6057639 Aug 27 10:51 oneapm.jar
+-rw-r--r--@  1 qinheng  staff    13679 Nov 26 23:10 oneapm.properties
+➜  apache-tomcat-8.0.28
+```
 
 
 **问题 5 :Centos下的Tomcat 容器参考官方部署步骤部署oneapm,提示" Install successful"表示成功了，但是还是看不到数据，是什么原因啊？**
@@ -61,7 +73,7 @@ cmd="java -Xms512m -Xmx2048m -XX:PermSize=256m －javaagent:/full/path/to/oneapm
 **问题 8 ：错误信息”中没有 Sample Stack Trace;**
 
 * 回答：当错误被快速重复抛出，基于性能的考虑，Java 编译器可能会优化掉 Sample stack trace 。若要禁用该优化，您可以在 JVM 参数中加上：
--XX:-OmitStackTraceInFastThrow
+-XX:-OmitStackTraceInFastThrow;
 
 
 **问题 9 ：重启应用服务器后抛出 Error opening zip file: oneapm.jar ；**
