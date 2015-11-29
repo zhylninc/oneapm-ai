@@ -14,77 +14,108 @@
 
 * 可选参数: OneAPM 提供的 License Key
 
-* 参数说明:1.请填写 OneAPM 安装步骤提供 License Key;2.配置正确的 License Key 后，OneAPM Agent 将与 OneAPM server 通信，使得 OneAPM Agent 正常工作;
+* 参数说明:<br>1.请填写 OneAPM 安装步骤提供 License Key;<br>2.配置正确的 License Key 后，OneAPM Agent 将与 OneAPM server 通信，使得 OneAPM Agent 正常工作;
 
 
 ## agent_enabled
 
- 默认值  true 
+ * 默认值: true 
 
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | Boolean |
-| 可选参数 |  true 和 false  |
-| 参数说明 | 设置为 true 将启用 OneAPM Agent，设置为 false 将停用 OneAPM Agent; |
+ * 生效方式: 重启应用服务器
+ 
+ * 参数类型: Boolean
+ 
+ * 可选参数:  true 和 false
+  
+ * 参数说明: 设置为 true 将启用 OneAPM Agent，设置为 false 将停用 OneAPM Agent;
+
 
 ## enable_auto_app_naming
 
-| 默认值 | false |
-| -- | -- |
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | Boolean |
-| 可选参数 | true 和 false |
-| 参数说明 | 1.当中间件部署多个应用程序时，OneAPM Agent 将自动区分每个应用程序的名称，<br>将业务数据存放相关应用程序，<br>2.设置为 false 后 OneAPM Agent 将不再自动区分应用程序，所有的数据会统一记录<br>在 app_name 参数指定应用程序中。 |
+ * 默认值:  false
+ 
+ * 生效方式: 重启应用服务器 
+
+ * 参数类型: Boolean 
+
+ * 可选参数: true 和 false
+ 
+ * 参数说明: <br> 1.当中间件部署多个应用程序时，OneAPM Agent 将自动区分每个应用程序的名称，将业务数据存放相关应用程序;<br>2.设置为 false 后 OneAPM Agent 将不再自动区分应用程序，所有的数据会统一记录<br>在 app_name 参数指定应用程序中。
+ 
 
 ## app_name
 
-| 默认值 | MyApplication |
-| -- | -- |
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | String  |
-| 参数说明 | app_name 只支持英文命名。指定初始化应用程序名称，当中间件部署多个应用时，<br>OneAPM Agent 将所有应用程序数据统一记录到初始化应用程序中，设置<br> enable_auto_app_naming 为 true， OneAPM Agent 将数据自动分散到相关应用程序中; |
+ * 默认值:  MyApplication 
+
+ * 生效方式:  重启应用服务器
+ 
+ * 参数类型 : String
+  
+*  参数说明:app_name只支持英文命名。指定初始化应用程序名称，当中间件部署多个应用时，<br>OneAPM Agent 将所有应用程序数据统一记录到初始化应用程序中，设置enable_auto_app_naming 为 true，OneAPM Agent将数据自动分散到相关应用程序中; 
+
 
 ## enable_auto_transaction_naming
 
-| 默认值 | true |
-| -- | -- |
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | Boolean |
-| 可选参数 | true 和 false |
-| 参数说明 | 1.设置为 true，启用基于 component-based 事务命名;<br>2.设置为 false 将按照事务请求的 URI 进行命名; |
+ * 默认值 : true 
+
+ * 生效方式:  重启应用服务器
+ 
+ * 参数类型 : Boolean 
+
+ * 可选参数 : true 和 false
+ 
+ * 参数说明 :<br> 1.设置为 true，启用基于 component-based 事务命名;<br>2.设置为 false 将按照事务请求的 URI 进行命名; 
+
 
 ## log_level
 
-| 默认值 | off|
-| -- | -- |
-| 生效方式 | 立即生效 |
-| 参数类型 | String |
-| 可选参数 | off / severe / waring / info / fine / finer / finest |
-| 参数说明 | 1.设置非 off 值将记录 OneAPM Agent 的工作日志;<br>2.当您需要进行故障分析时，参数级别决定日志的细度; |
+ * 默认值 : off
+
+ * 生效方式 : 立即生效
+ 
+ * 参数类型:  String
+ 
+ * 可选参数:  off / severe / waring / info / fine / finer / finest 
+
+ * 参数说明:<br>  1.设置非 off 值将记录 OneAPM Agent 的工作日志;<br>2.当您需要进行故障分析时，参数级别决定日志的细度; 
+
 
 ## 日志输出级别
 
-| off  |无日志| off|
-| -- | -- |
-| severe |严重|severe|
-| waring |警告|severe + warning |
-| info   |正常|severe + warning + info|
-| fine   |精度|severe + warning + info + fine  |
-| finer  |细度|severe + warning + info + fine + finer |
-| finest |最好|severe + warning + info + fine + finer + finest |
+* off: 无日志[off]
+
+
+* severe: 严重[severe]
+
+* waring :正常[severe + warning]
+
+* info :正常[severe + warning + info]
+
+* fine: 精度[severe + warning + info + fine]
+
+* finer: 细度[severe + warning + info + fine + finer]
+
+* finest: 最好[severe + warning + info + fine + finer + finest]
+
+
 
 ## audit_mode
 
-| 默认值 | false |
-| -- | -- |
-| 生效方式 | 立即生效 |
-| 参数类型 | Boolean |
-| 可选参数 | true / false |
-| 参数说明 | 设置为 true 将以普通文本形式记录 OneAPM Agent 与 OneAPM server<br> 的通信数据，并将数据记录在日志中。 |
+
+ * 默认值:  false 
+
+ * 生效方式:  立即生效
+ 
+ * 参数类型:  Boolean 
+
+ * 可选参数:  true / false 
+
+ * 参数说明 : 设置为 true 将以普通文本形式记录 OneAPM Agent 与 OneAPM server 的通信数据，并将数据记录在日志中。 
+
 
 ## log_file_count
 
-| 默认值 | 1 |
-| -- | -- |
+默认值  1 
 | 生效方式 | 重启应用服务器 |
 | 参数类型 | Integer |
 | 参数说明 | 限制 OneAPM Agent 日志生成的数量，仅当 log_level 参数处于非 off 值时生效。<br>超过这个数量时，日志将覆盖使用。 |
