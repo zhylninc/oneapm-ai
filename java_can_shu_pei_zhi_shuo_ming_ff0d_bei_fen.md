@@ -115,43 +115,60 @@
 
 ## log_file_count
 
-默认值  1 
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | Integer |
-| 参数说明 | 限制 OneAPM Agent 日志生成的数量，仅当 log_level 参数处于非 off 值时生效。<br>超过这个数量时，日志将覆盖使用。 |
+* 默认值:  1
+ 
+* 生效方式:  重启应用服务器 
+
+* 参数类型:  Integer 
+
+* 参数说明:  限制 OneAPM Agent 日志生成的数量，仅当 log_level 参数处于非 off 值时生效。超过这个数量时，日志将覆盖使用。
+ 
 
 ## log_limit_in_kbytes
 
-| 默认值 | 0 |
-| -- | -- |
-| 生效方式 | 重启应用服务器|
-| 参数类型 | Integer  |
-| 参数说明 | 以 KB 为单位，限制 OneAPM Agent 日志的大小。当参数设置为 0 时，<br>则不限制日志大小。|
+ * 默认值:  0 
+
+ * 生效方式:  重启应用服务器
+
+ * 参数类型:  Integer  
+
+ * 参数说明 : 以 KB 为单位，限制 OneAPM Agent 日志的大小。当参数设置为 0 时，则不限制日志大小。
+
 
 ## log_file_name
 
-| 默认值 | oneapm.log |
-| -- | -- |
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | String |
-| 参数说明 | 指定 OneAPM Agent 日志输出的名称。 |
+* 默认值:  oneapm.log
+ 
+* 生效方式:  重启应用服务器
+ 
+* 参数类型:  String 
+
+* 参数说明:  指定 OneAPM Agent 日志输出的名称。 
+
 
 ## log_file_path
 
-| 默认值 | oneapm.jar 同级目录 |
-| -- | -- |
-| 生效方式 | 重启应用服务器|
-| 参数类型 | String |
-| 参数说明 | 指定 OneAPM Agent 日志位置，仅当 log_level 参数处于非 off 值时生效。|
+* **默认值**:  oneapm.jar 同级目录
+ 
+* **生效方式**:  重启应用服务器
+
+* **参数类型**:  String 
+
+* **参数说明**:  指定 OneAPM Agent 日志位置，仅当 log_level 参数处于非 off 值时生效。
+
 
 ## SSL
 
-| 默认值 | true|
-| -- | -- |
-| 生效方式 | 重启应用服务器|
-| 参数类型 | Boolean|
-| 可选参数 | true / false|
-| 参数说明 | 1.设置为 true，指定OneAPM Agent 使用 HTTPS 与 OneAPM server 加密通信;<br>2.设置为 false 则采用 HTTP 方式通信;|
+ * 默认值 : true
+
+ * 生效方式: 重启应用服务器
+
+ * 参数类型 : Boolean
+
+ * 可选参数 : true / false
+
+*  参数说明:<br>  1.设置为 true，指定OneAPM Agent 使用 HTTPS 与 OneAPM server 加密通信;<br>2.设置为 false 则采用 HTTP 方式通信;
+
 
 ## host
 
