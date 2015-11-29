@@ -172,12 +172,16 @@
 
 ## host
 
-| 默认值 | tpm.oneapm.com|
-| -- | -- |
-| 生效方式 | 重启应用服务器 |
-| 参数类型 | 网络地址 |
-| 可选参数 | IP 地址 / 域名 |
-| 参数说明 | 指定 OneAPM Agent 与 OneAPM server 的通信地址; |
+* 默认值：  tpm.oneapm.com
+
+* 生效方式 ： 重启应用服务器 
+
+* 参数类型 ： 网络地址 
+
+* 可选参数 ： IP 地址 / 域名
+ 
+* 参数说明 ： 指定 OneAPM Agent 与 OneAPM server 的通信地址;
+ 
 
 ## port
 
