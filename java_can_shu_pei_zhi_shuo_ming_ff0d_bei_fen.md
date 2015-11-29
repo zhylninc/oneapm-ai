@@ -6,7 +6,7 @@
 ## License_key
 
  ```
-  默 认值  ： 这里请输入第二步生成的 License Key 
+  默 认 值 ： 这里请输入第二步生成的 License Key 
   生效方式 ： 重启应用服务器 
   参数类型 ： String 
   可选参数 ： OneAPM 提供的 License Key
