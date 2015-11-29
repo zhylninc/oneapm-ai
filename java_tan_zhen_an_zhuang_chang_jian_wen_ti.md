@@ -38,7 +38,7 @@ drwxr-xr-x@ 10 qinheng  staff      340 Nov 27 21:50 webapps
 drwxr-xr-x@  3 qinheng  staff      102 Nov 26 23:28 work
 ➜  apache-tomcat-8.0.28
 ```
-注意：Tomcat根目录下必须要有temp目录
+注意：Tomcat根目录下必须要有temp目录；
 
 
 **问题 3 ：Java开发的 jar包程序 应该如何使用oneapm进行监控？**
