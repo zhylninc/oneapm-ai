@@ -33,6 +33,6 @@
    * [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
    * [PHP](php-faq.md)
    * Java
-       * Java 探针 安装常见问题
+       * [Java 探针 安装常见问题](java_tan_zhen_an_zhuang_chang_jian_wen_ti.md)
 * 功能详述
 
