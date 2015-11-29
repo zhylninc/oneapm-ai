@@ -5,19 +5,20 @@
 
 ## License_key
 
- ```
-  默认值 － 这里请输入第二步生成的 License Key 
-  
-  生效方式 - 重启应用服务器
-   
-  参数类型 - String 
-  
-  可选参数 - OneAPM 提供的 License Key
-  
-  参数说明 - 1.请填写 OneAPM 安装步骤提供 License Key;2.配置正确的 License Key 后，OneAPM Agent 将与 OneAPM server 通信，使得 OneAPM Agent 正常工作;
-  ``` 
 
-* | 参数说明 |  |
+* 默认值:这里请输入第二步生成的 License Key
+
+
+* 生效方式: 重启应用服务器
+
+
+* 参数类型: String 
+
+
+* 可选参数: OneAPM 提供的 License Key
+
+
+* 参数说明:1.请填写 OneAPM 安装步骤提供 License Key;2.配置正确的 License Key 后，OneAPM Agent 将与 OneAPM server 通信，使得 OneAPM Agent 正常工作;
 
 
 ## agent_enabled
