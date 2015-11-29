@@ -31,8 +31,8 @@
    * [数据显示问题](shu_ju_xian_shi_wen_ti.md)
        * [Java 部署 OneAPM后无数据显示](java_bu_shu_oneapm_hou_wu_shu_ju_xian_shi.md)
    * [PHP](php-faq.md)
+   * [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
    * Java
        * [Java 探针 安装常见问题](java_tan_zhen_an_zhuang_chang_jian_wen_ti.md)
-* [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
 * 功能详述
 
