@@ -12,10 +12,33 @@
 **问题 2 ：tomcat下部署oneapm并重启后，／OneAPM/logs目录也可以看到，但是还是看不到数据，是什么原因啊？**
 
 * 回答：遇到这种情况，排查方法如下：
-1.排查网络是否跟oneapm正常打通，执行命令 telnet tpm.oneapm.com 443 或者 ping tpm.oneapm.com，如果不通请检查网络环境，并修复，确认可以跟oneapm打通；
-2.排查服务器的时间是否为北京时间东八区的时间，如果不是请更新下服务器的时间跟北京东八区的时间保持一致；
-3.打开并检查／OneAPM/oneapm.properties文件配置，设置 ssl = true；host = tpm.oneapm.com；port = 443；
-4.检查 tomcat 根目录下是否有temp目录，如果没有请手动创建temp目录
+
+ 1.排查网络是否跟oneapm正常打通，执行命令 telnet tpm.oneapm.com 443 或者 ping tpm.oneapm.com，如果不通请检查网络环境，并修复，确认可以跟oneapm打通；
+
+ 2.排查服务器的时间是否为北京时间东八区的时间，如果不是请更新下服务器的时间跟北京东八区的时间保持一致；
+ 
+ 3.打开并检查／OneAPM/oneapm.properties文件配置，设置 ssl = true；host = tpm.oneapm.com；port = 443；
+ 
+ 4.检查 tomcat 根目录下是否有temp目录，如果没有请手动创建temp目录；例如：
+ ```
+ ➜  apache-tomcat-8.0.28  ls -l
+total 14896
+-rw-r--r--@  1 qinheng  staff    58068 Oct  7 19:26 LICENSE
+-rw-r--r--@  1 qinheng  staff     1489 Oct  7 19:26 NOTICE
+drwxr-xr-x@  8 qinheng  staff      272 Nov 26 23:13 OneAPM
+-rw-r--r--@  1 qinheng  staff  7530606 Nov 27 09:56 OneAPM.zip
+-rw-r--r--@  1 qinheng  staff     6913 Oct  7 19:26 RELEASE-NOTES
+-rw-r--r--@  1 qinheng  staff    16682 Oct  7 19:26 RUNNING.txt
+drwxr-xr-x@ 26 qinheng  staff      884 Nov 26 23:26 bin
+drwxr-xr-x@ 11 qinheng  staff      374 Nov 26 23:28 conf
+drwxr-xr-x@ 26 qinheng  staff      884 Nov 26 23:20 lib
+drwxr-xr-x@ 13 qinheng  staff      442 Nov 27 10:02 logs
+drwxr-xr-x@  9 qinheng  staff      306 Nov 27 21:50 temp
+drwxr-xr-x@ 10 qinheng  staff      340 Nov 27 21:50 webapps
+drwxr-xr-x@  3 qinheng  staff      102 Nov 26 23:28 work
+➜  apache-tomcat-8.0.28
+```
+注意：Tomcat根目录下必须要有temp目录
 
 
 **问题 3 ：Java开发的 jar包程序 应该如何使用oneapm进行监控？**
