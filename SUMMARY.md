@@ -32,6 +32,6 @@
        * [Java 部署 OneAPM后无数据显示](java_bu_shu_oneapm_hou_wu_shu_ju_xian_shi.md)
    * [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
    * [PHP](php-faq.md)
-   * Java
+   * [Java](Java)
 * 功能详述
 
