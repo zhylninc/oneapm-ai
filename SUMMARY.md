@@ -23,7 +23,6 @@
 * [配置选项](Java)
    * [PHP](php-option.md)
    * [JAVA](java1.md)
-       * [Java 参数配置说明](java_can_shu_jie_shi.md)
        * [Java 参数配置说明－备份](java_can_shu_pei_zhi_shuo_ming_ff0d_bei_fen.md)
 * [常见问题](chang_jian_wen_ti.md)
    * [内网服务器如何部署OneAPM](nei_wang_fu_wu_qi_ru_he_bu_shu_oneapm.md)
