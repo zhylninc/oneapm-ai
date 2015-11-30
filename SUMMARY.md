@@ -34,7 +34,6 @@
    * [如何使用OneAPM的 extensions 拓展功能](ru_he_shi_yong_oneapm_de_extensions_tuo_zhan_gong_.md)
    * [如何对指定 jar 包进行监控](ru_he_dui_zhi_ding_jar_bao_jin_xing_jian_kong.md)
    * [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
-   * Java
-       * [Java 探针 安装常见问题](java_tan_zhen_an_zhuang_chang_jian_wen_ti.md)
+   * [Java](Java)
 * 功能详述
 
