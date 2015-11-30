@@ -33,6 +33,6 @@
    * [JAVA](java2.md)
    * [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
    * [Java 探针 安装常见问题](java_tan_zhen_an_zhuang_chang_jian_wen_ti.md)
-       * Java探针安装后无数据常见问题
+       * [Java探针安装后无数据常见问题](javatan_zhen_an_zhuang_hou_wu_shu_ju_chang_jian_we.md)
 * 功能详述
 
