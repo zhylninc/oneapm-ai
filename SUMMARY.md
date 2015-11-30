@@ -22,7 +22,7 @@
    * [PHP](php-compatible.md)
 * [配置选项](Java)
    * [PHP](php-option.md)
-   * JAVA
+   * [JAVA](java1.md)
        * [Java 参数配置说明](java_can_shu_jie_shi.md)
        * [Java 参数配置说明－备份](java_can_shu_pei_zhi_shuo_ming_ff0d_bei_fen.md)
 * [常见问题](chang_jian_wen_ti.md)
@@ -34,6 +34,5 @@
    * [如何使用OneAPM的 extensions 拓展功能](ru_he_shi_yong_oneapm_de_extensions_tuo_zhan_gong_.md)
    * [如何对指定 jar 包进行监控](ru_he_dui_zhi_ding_jar_bao_jin_xing_jian_kong.md)
    * [Java Agent 更新方法](java_agent_geng_xin_fang_fa.md)
-   * [Java](Java)
 * 功能详述
 
